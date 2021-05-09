@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Site </title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container">
+          <hr class="nav-line"/>
+          <div class="links-container">
+            <div class="link-container" x-data="{isOpen : false}" @click.away="isOpen = false"> 
+              <button class="but-link" @click="isOpen = !isOpen">Главное </button>
+              <div class="drop-container" x-show="isOpen"> 
+                <div class="drop-item"><a class="drop-text-link">Введение </a></div>
+              </div>
+            </div>
+            <div class="link-container" x-data="{isOpen : false}" @click.away="isOpen = false"> 
+              <button class="but-link" @click="isOpen = !isOpen">Электронное обучение </button>
+              <div class="drop-container" x-show="isOpen"> 
+                <div class="drop-item"><a class="drop-text-link">Что такое ЭО?</a></div>
+                <div class="drop-item"><a class="drop-text-link">Для чего ЭО?</a></div>
+                <div class="drop-item"><a class="drop-text-link">Плюсы и минусы ЭО?</a></div>
+              </div>
+            </div>
+            <div class="link-container" x-data="{isOpen : false}" @click.away="isOpen = false"> 
+              <button class="but-link" @click="isOpen = !isOpen">Обзор Teachbase </button>
+              <div class="drop-container" x-show="isOpen"> 
+                <div class="drop-item"><a class="drop-text-link">Описание Teachbase</a></div>
+                <div class="drop-item"><a class="drop-text-link">Функционал</a></div>
+                <div class="drop-item"><a class="drop-text-link">Плюсы и минусы</a></div>
+              </div>
+            </div>
+            <div class="link-container"> <a class="text-link">Кто использует Teachbase?</a></div>
+            <div class="link-container"> <a class="text-link">Заключение</a></div>
+            <div class="link-container"> <a class="text-link">Список использованных источников</a></div>
+          </div>
+          <hr class="nav-line"/>
+        </div>
+      </section>
+      <section class="contents"> </section>
+    </section>
+    <footer class="footer">
+      <div class="user-container">
+        <div class="user-name"> 
+          <p>Опешко Полина Сергеевна </p>
+        </div>
+        <div class="user-name"> 
+          <p>opeshko@sdedu.ry</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
