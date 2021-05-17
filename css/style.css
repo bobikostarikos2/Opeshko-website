@@ -4,7 +4,8 @@
   padding: 0px;
   border: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  text-decoration: none; }
 
 body {
   display: -webkit-box;
@@ -17,10 +18,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
   width: auto;
   background-image: url(../images/image.jpg); }
 
-.user-name p, .navigation__nav-container .drop-text-link, .navigation__nav-container .text-link, .navigation__nav-container button {
+.user-name p, .contents .big-title-container h1, .contents .image-container p, .contents .title-container h2, .contents .mini-title-container h3, .contents .text-container p, .contents .text-container a, .contents .text-container b, .contents .list-container p, .contents .video-container p, .navigation__nav-container .drop-text-link, .navigation__nav-container .text-link, .navigation__nav-container button {
   font-family: 'Playfair Display', serif; }
 
 .user-container {
@@ -50,16 +52,94 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   min-height: 550px; }
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 50px; }
+  .contents .big-title-container {
+    padding-bottom: 50px; }
+    .contents .big-title-container h1 {
+      color: #333436;
+      text-align: center;
+      font-size: 26px;
+      text-transform: uppercase; }
+  .contents .ufo-container {
+    width: 200px; }
+    .contents .ufo-container img {
+      border-radius: 20px;
+      width: 100%; }
+  .contents .image-container {
+    padding: 20px 0px; }
+    .contents .image-container p {
+      text-align: center;
+      font-size: 14px;
+      color: #333436; }
+  .contents .title-container {
+    padding-bottom: 15px;
+    width: auto; }
+    .contents .title-container h2 {
+      font-size: 26px;
+      color: #333436; }
+    .contents .title-container hr {
+      height: 1px;
+      width: auto;
+      background-color: #333436; }
+  .contents .mini-title-container {
+    padding-bottom: 10px; }
+    .contents .mini-title-container h3 {
+      font-size: 22px;
+      color: #333436; }
+  .contents .text-container {
+    width: 100%; }
+    .contents .text-container p {
+      text-indent: 20px;
+      text-align: justify;
+      font-size: 20px;
+      color: #333436;
+      padding-bottom: 8px; }
+    .contents .text-container a {
+      color: #202020;
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+      .contents .text-container a:hover {
+        color: #6b6b6b; }
+    .contents .text-container b {
+      color: #202020; }
+  .contents .list-container {
+    padding-left: 40px;
+    padding-bottom: 25px; }
+    .contents .list-container li {
+      padding-bottom: 9px; }
+    .contents .list-container p {
+      font-size: 20px;
+      color: #333436; }
+  .contents .video-container {
+    padding-bottom: 25px; }
+    .contents .video-container p {
+      font-size: 16px;
+      color: #333436;
+      text-align: center;
+      padding-bottom: 5px; }
+    .contents .video-container .video-block {
+      padding: 20px;
+      border: 6px double #c7cee0; }
 
 .navigation {
   display: -webkit-box;
@@ -72,7 +152,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 50px; }
+  padding: 10px 50px; }
 
 .navigation__nav-container {
   display: -webkit-box;

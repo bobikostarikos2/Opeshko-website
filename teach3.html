@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Site </title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <section class="main">
+      <section class="navigation">
+        <div class="navigation__nav-container">
+          <hr class="nav-line"/>
+          <div class="links-container">
+            <div class="link-container" x-data="{isOpen : false}" @click.away="isOpen = false"> 
+              <button class="but-link" @click="isOpen = !isOpen">Главное </button>
+              <div class="drop-container" x-show="isOpen"> 
+                <div class="drop-item"><a class="drop-text-link" href="start.html">Введение </a></div>
+                <div class="drop-item"><a class="drop-text-link" href="index.html">Стартовая страница</a></div>
+              </div>
+            </div>
+            <div class="link-container" x-data="{isOpen : false}" @click.away="isOpen = false"> 
+              <button class="but-link" @click="isOpen = !isOpen">Электронное обучение </button>
+              <div class="drop-container" x-show="isOpen"> 
+                <div class="drop-item"><a class="drop-text-link" href="elearn1.html">Что такое ЭО?</a></div>
+                <div class="drop-item"><a class="drop-text-link" href="elearn3.html">Плюсы и минусы ЭО?</a></div>
+              </div>
+            </div>
+            <div class="link-container" x-data="{isOpen : false}" @click.away="isOpen = false"> 
+              <button class="but-link" @click="isOpen = !isOpen">Обзор Teachbase </button>
+              <div class="drop-container" x-show="isOpen"> 
+                <div class="drop-item"><a class="drop-text-link" href="teach1.html">Описание Teachbase</a></div>
+                <div class="drop-item"><a class="drop-text-link" href="teach2.html">Функционал</a></div>
+                <div class="drop-item"><a class="drop-text-link" href="teach3.html">Плюсы и минусы</a></div>
+              </div>
+            </div>
+            <div class="link-container"> <a class="text-link" href="teach4.html">Кто использует Teachbase?</a></div>
+            <div class="link-container"> <a class="text-link" href="finish.html">Заключение</a></div>
+            <div class="link-container"> <a class="text-link" href="liter.html">Список использованных источников</a></div>
+          </div>
+          <hr class="nav-line"/>
+        </div>
+      </section>
+      <section class="contents">
+        <div class="title-container">
+          <h2>Плюсы и минусы Teachbase</h2>
+          <hr/>
+        </div>
+        <div class="mini-title-container"> 
+          <h3>Положительные стороны</h3>
+        </div>
+        <div class="list-container">
+          <ul>
+            <li>
+              <p>Низкая или нулевая стоимость курсов. Большое количество курсов можно пройти совершенно бесплатно. Это снижает порог входа в систему дистанционного обучения и делает ее более доступной. Стоимость платных интернет курсов часто ниже, чем стоимость аналогичных очных курсов, так как в цену не заложены аренда помещения, материалы для курсов, траты на поездки.</p>
+            </li>
+            <li>
+              <p>Большое количество курсов позволяет начать обучение практически с любого первоначального уровня знаний.</p>
+            </li>
+            <li>
+              <p>Материалы курса доступны в любое удобное для вас врем я . При наличии подключения к интернету вы можете начать обучение в любое удобное для вас время, а также вернуться к нему тогда, когда это удобно. Вы также можете пересмотреть любые уже пройденные материалы для того, чтобы освежить знания.</p>
+            </li>
+            <li>
+              <p>Курсы могут быть построены на различных интерактивных принципах, что повышает эффективность обучения. Почти всегда курсы строят по принципу "от простого к сложному". В зависимости от области обучения в различных курсах можно найти разнообразные интерактивные элементы: видео, тесты, задания на сопоставления, схемы и графики, которые нужно составить или восстановить самому и т.д.</p>
+            </li>
+            <li>
+              <p>Все вышеперечисленные преимущества делают дистанционные курсы такими популярными. Рост популярности также обеспечивает постоянный прирост количества разнообразных курсов и рост их качества.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="image-container"> <img width="500px" src="https://help.teachbase.ru/hc/article_attachments/360015284679/mceclip2.png"/>
+          <p>Рисунок - Скриншот интерфейса Teachbase</p>
+        </div>
+        <div class="mini-title-container"> 
+          <h3>Отрицательные стороны</h3>
+        </div>
+        <div class="list-container">
+          <ul>
+            <li>
+              <p>У формата дистанционных интернет курсов есть и несколько недостатков. К ним можно отнести:</p>
+            </li>
+            <li>
+              <p>Отсутствие внешней мотивации. Для успешного прохождения курсов и усвоения знаний необходима сильная внутренняя мотивация и самодисциплина. Это является основным ограничивающим фактором повсеместного распространения онлайн курсов</p>
+            </li>
+            <li>
+              <p>Ограниченный объем информации в курсе</p>
+            </li>
+            <li>
+              <p>При прохождении курса вы не имеет возможности выйти за пределы того объема информации, который изначально был заложен в курс его создателем.</p>
+            </li>
+            <li>
+              <p>Не все области знаний поддаются преобразованию в формат курса</p>
+            </li>
+            <li>
+              <p>Большое количество времени и усилий, которые требуются тренеру на создание одного курса. Решить данную проблему призваны различные системы и конструкторы, упрощающие этот процесс.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="user-container">
+        <div class="user-name"> 
+          <p>Опешко Полина Сергеевна </p>
+        </div>
+        <div class="user-name"> 
+          <p>opeshko@sdedu.ry</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
